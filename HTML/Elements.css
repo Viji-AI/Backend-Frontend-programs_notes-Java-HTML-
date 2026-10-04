@@ -1,0 +1,24 @@
+body {
+  /* background-color: antiquewhite; */
+  background-image: url("https://www.credosystemz.com/wp-content/uploads/2023/01/cropped-logo.png");
+  background-repeat: no-repeat;
+}
+
+h2,
+p {
+  color: greenyellow;
+  border: 1px solid;
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+  color: brown !important;
+  /* width: 10px;
+  height: 50px; */
+}
+
+div h2 {
+  font-weight: bold;
+  font-size: 85px;
+}

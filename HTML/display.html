@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <title>Display property</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Courier New", Courier, monospace;
+        background-color: aliceblue;
+        color: #222;
+      }
+
+      header {
+        background-color: blueviolet;
+        color: white;
+        text-align: center;
+        padding: 25px;
+      }
+
+      section {
+        background-color: aqua;
+        width: 90%;
+        margin: 30px;
+        padding: 25px;
+        border-radius: 10px;
+      }
+
+      .example-area {
+        background-color: brown;
+        padding: 20px;
+        border: 1px solid #ddd;
+      }
+
+      .block-box {
+        display: block;
+        background-color: yellow;
+        border: 2px solid #2563db;
+        width: 300px;
+        padding: 15px;
+        margin-bottom: 10px;
+      }
+
+      .inline-box {
+        display: inline;
+        background-color: #f689;
+        border: 2px solid green;
+        padding: 10px;
+      }
+
+      .inline-block-box {
+        display: inline-block;
+        width: 150px;
+        height: 80px;
+        background-color: #bbf7d0;
+        border: 2px solid #16a3;
+        padding: 15px;
+        margin: 5px;
+      }
+
+      .shadow-basic {
+        background-color: chartreuse;
+        padding: 25px;
+        width: 250px;
+        box-shadow: 5px 5px 10px red;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>CSS display properites</h1>
+      <p>This is example for display property</p>
+    </header>
+    <!-- this is for display block -->
+    <section>
+      <h2>display: block</h2>
+      <div class="example-area">
+        <div class="block-box">Block box 1</div>
+        <div class="block-box">Block box 2</div>
+        <div class="block-box">Block box 3</div>
+      </div>
+    </section>
+    <section>
+      <h2>display : inline</h2>
+      <div class="example-area">
+        This is
+        <span class="inline-box"> Inline box</span>
+        and this text continues on the same line
+      </div>
+    </section>
+    <section>
+      <h2>display: inline-block</h2>
+      <div class="example-area">
+        <div class="inline-block-box">Block box 1</div>
+        <div class="inline-block-box">Block box 2</div>
+        <div class="inline-block-box">Block box 3</div>
+      </div>
+    </section>
+    <section>
+      <h3>Basic shadow</h3>
+      <div class="shadow-basic">
+        <h3>Basic shadow</h3>
+        <p>This box has a simple shadow</p>
+      </div>
+    </section>
+  </body>
+</html>
