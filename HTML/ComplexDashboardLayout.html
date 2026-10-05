@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .dashboard {
+            display: flex;
+        }
+        .sidebar {
+            width: 200px;
+            height: 500px;
+            background-color: #444;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .card {
+            background-color: #eee;
+            padding: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h2>My Dashboard</h2>
+    </div>
+    <div class="dashboard">
+
+        <div class="sidebar">
+            <a href="#">Home</a>
+            <a href="#">Profile</a>
+            <a href="#">Settings</a>
+            <a href="#">Logout</a>
+        </div>
+
+        <div class="content">
+
+            <div class="card">Users</div>
+            <div class="card">Projects</div>
+            <div class="card">Tasks</div>
+            <div class="card">Reports</div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
