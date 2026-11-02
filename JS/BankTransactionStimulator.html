@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bank Transaction Simulator</title>
+</head>
+<body>
+
+    <h2>Bank Account Details</h2>
+
+    <script>
+        let accountHolder = "Ravi";
+        let balance = 5000;
+        let depositAmount = 1000;
+        let withdrawalAmount = 2000;
+
+        let withdrawalAllowed = true;
+
+        function depositMoney(amount) {
+            balance = balance + amount;
+            return balance;
+        }
+
+        function withdrawMoney(amount) {
+            if (withdrawalAllowed && balance >= amount) {
+                balance = balance - amount;
+                return balance;
+            } 
+            else {
+                console.log("Insufficient balance. Withdrawal not allowed.");
+                return balance;
+            }
+        }
+
+        let initialBalance = balance;
+
+        let balanceAfterDeposit = depositMoney(depositAmount);
+
+        let finalBalance = withdrawMoney(withdrawalAmount);
+
+        console.log("----- Bank Transaction Details -----");
+        console.log("Account Holder: " + accountHolder);
+        console.log("Initial Balance: Rs." + initialBalance);
+        console.log("Deposit Amount: Rs." + depositAmount);
+        console.log("Balance After Deposit: Rs." + balanceAfterDeposit);
+        console.log("Withdrawal Amount: Rs." + withdrawalAmount);
+        console.log("Final Balance: Rs." + finalBalance);
+
+    </script>
+</body>
+</html>

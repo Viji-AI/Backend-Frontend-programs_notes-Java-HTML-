@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Bill Calculator</title>
+</head>
+<body>
+    <h2>Shopping Bill</h2>
+    <script>
+        let productName = "Headphones";
+        let price = 600;
+        let quantity = 2;
+        let discount = 10;
+        function calculateSubtotal(price, quantity) {
+            return price * quantity;
+        }
+        function calculateDiscount(subtotal, discount) {
+            if (subtotal >= 1000) {
+                return subtotal * discount / 100;
+            } else {
+                return 0;
+            }
+        }
+
+        let subtotal = calculateSubtotal(price, quantity);
+
+        let discountAmount = calculateDiscount(subtotal, discount);
+
+        let finalAmount = subtotal - discountAmount;
+
+        console.log("----- Shopping Bill -----");
+        console.log("Product Name: " + productName);
+        console.log("Price: " + price);
+        console.log("Quantity: " + quantity);
+        console.log("Subtotal: " + subtotal);
+        console.log("Discount: " + discount + "%");
+        console.log("Discount Amount: " + discountAmount);
+        console.log("Final Amount: " + finalAmount);
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Electricity Bill Calculator</title>
+</head>
+<body>
+
+    <h2>Electricity Bill</h2>
+
+    <script>
+        let customerName = "Kumar";
+        let units = 150;
+
+        function getRate(units) {
+            if (units <= 100) {
+                return 2;
+            } 
+            else if (units <= 200) {
+                return 3;
+            } 
+            else {
+                return 5;
+            }
+        }
+
+        function calculateBill(units, rate) {
+            return units * rate;
+        }
+
+        let rate = getRate(units);
+        let billAmount = calculateBill(units, rate);
+
+        console.log("----- Electricity Bill -----");
+        console.log("Customer Name: " + customerName);
+        console.log("Units Consumed: " + units);
+        console.log("Rate per Unit: " + rate);
+        console.log("Bill Amount: " + billAmount);
+    </script>
+</body>
+</html>
